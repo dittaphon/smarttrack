@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Login title </title>
+
+ 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="lib/jQuery/jquery-ui-themeroller.css" type="text/css" media="screen">
+		<link rel="stylesheet" type="text/css" href="lib/dhtmlxGrid/dhtmlxgrid.css">
+		<link rel="stylesheet" type="text/css" href="lib/dhtmlxGrid/dhtmlxgrid_skins.css">
+		<link rel="STYLESHEET" type="text/css" href="lib/dhtmlxGrid/ext/dhtmlxgrid_pgn_bricks.css">
+        <script src="lib/jQuery/jquery.js"></script>
+        <script src="lib/jQuery/jquery-ui.js"></script>
+		<script type="text/javascript" src="lib/js/Popup.js"></script>
+		<script type="text/javascript" src="lib/ddaccordion.js"></script>
+		<script type="text/javascript"></script>
+		<script src="lib/js/Common.js"></script> 
+</head>
+
+<script>
+    		
+        $(document).ready(function(){
+        	$("#moduleTitle").text("Login");
+            _initPage();
+        });
+
+        $("#btnOk").click(function(){
+        	var user = $("#user").val();
+        	if(user==''){
+        		$("#warn").html('<font color="red"><i>* Please Input UserName</i></font>');
+        	}else if(user=='apc'){	
+        		$("#alFOR").hide();
+        		_setPage('APC'); 
+        		loadToMainContent('modules/AlertNotification/AlertNotice_APC.html');
+        	}else if(user=='fw'){	
+        		$("#alAPC").hide();
+        		_setPage('FORWARDER'); 
+        		loadToMainContent('modules/AlertNotification/AlertNotice_FOR.html');
+        	}else{
+        		$("#warn").html('<font color="red"><i>* Invalid UserName</i></font>');
+        		$("#user").val('');
+        	}
+		});
+
+    	$("#btnCancel").click(function(){
+    		$("#user").val('');
+    	});
+    	
+    	$("#btnOk").focus();
+
+</script>
+
+<script language="JavaScript">
+
+	function _initPage(){
+		$('#sidebar').hide();
+		$('#main').width('100%');
+		$('a#slick-toggle').text('');
+
+		$('#userId').html('');
+		$('#valUserId').html('');
+		$('#userName').html('');
+		$('#valUserName').html('');
+	}
+
+	function _setPage(user){
+		$('#sidebar').slideToggle('fast');
+        $('#main').width('80%');
+        $('a#slick-toggle').text('<<');	
+        $('#userId').html('USER ID:');
+		$('#valUserId').html(user);
+		$('#userName').html('USER NAME:');
+		$('#valUserName').html(user);
+	}
+</script>
+    
+<body>
+
+<div>
+
+	<table width="100%" border="0" valign="middle">
+		<tr>
+			<td width="38%">
+			</td>
+			<td width="24%">
+			<fieldset>
+
+				<table width="100%" border="0" >
+					<tr>
+			  			<td align="right" width="45%">UserName :</td>
+						<td align="left"  width="45%">
+							<input type="text" id="user" name="user" style="width: 130px" value="user001">	
+						</td>
+						<td align="left" width="10%"></td>
+		  			</tr>
+		  			<tr>
+		  				<td align="right">Password :</td>
+						<td align="left">
+							<input type="password" id="pass" name="pass" style="width: 130px" value="password001">	
+						</td>
+						<td align="left" width="10%"></td>
+		  			</tr>
+		  			<tr>
+		  				<td colspan="3"></td>
+		  			</tr>
+		  			<tr>
+		  				<td align="right" colspan="3">
+		  					<input type="button" id="btnOk" name="btnOk" value="OK" class="button2">
+		  					<input type="button" id="btnCancel" name="btnCancel" value="Cancel" class="button2">
+		  				</td>	
+		  			</tr>
+		  			<tr>
+		  				<td align="right" colspan="3" >
+		  					<label id="warn" name="warn"></label>
+		  				</td>
+		  			</tr>
+				</table>
+			</fieldset>
+			</td>
+			<td width="38%">
+			</td>
+		</tr>
+	</table>
+
+</div>
+</body>
+</html>

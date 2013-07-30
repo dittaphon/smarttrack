@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Thainology and Solutions Co.,Ltd.</title>
+      <link href="css/mainpage.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+      <div id="header">      
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+      	<tr>
+         	<td colspan="3"><table background="images/hbg.gif"  width="100%" cellspacing="0" cellpadding="0" border="0">
+               	<tr>
+                  	<td width="20%"><img src="images/logo_smallest.jpg"></td>
+                     <td width="60%" align="CENTER" class="TEXT_HEADER_COMPANY">Thainology and Solutions Co.,Ltd.
+                     </td>
+                     <td width="20%">
+                     	<table>
+                        	<tr>
+                           	<td align="RIGHT" class="TEXT_CAPTION_USERNAME">User Name : </td>
+                              <td class="TEXT_VALUE_USERNAME"> Administrator </td>
+                           </tr>
+                        	<tr>
+                           	<td align="RIGHT" class="TEXT_CAPTION_USERNAME"> Last Login  : </td>
+                              <td class="TEXT_VALUE_USERNAME"> 11 เมษายน 2556 10:11 น. </td>
+                           </tr>                          
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>          
+         </div>
+         <div id="nav">
+      <table  width="100%" cellspacing="0" cellpadding="0" border="0">          
+         <tr bgcolor="#FF0000">
+         	<td width="30%" align="LEFT">&nbsp;&nbsp;&nbsp;<img src="images/btn_hide_menu.gif" width="20" height="17"></td>
+         	<td class="TEXT_SCREEN_NAME" align="CENTER">BOOKING</td>
+            <td width="30%" align="RIGHT"><SPAN CLASS="TEXT_SCREEN_ID">SCREEN ID  [BK001L]</SPAN>&nbsp;&nbsp;<img src="images/btn_logout.gif"></td>
+         </tr>
+         <tr>
+         </tr>
+      </table> 
+         </div>      
+	</body>
+</html>

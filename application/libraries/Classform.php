@@ -1,0 +1,144 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+
+class Classform {
+
+    public function __construct()
+    {
+        
+    }
+
+   public function getHeader($base_url, $title, $company, $screenID)
+   {
+      return "<html>
+<head>
+   <base href=" . $base_url . ">
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+   <title> " . $title ."</title>
+   <script src='javascripts/jquery.js' type='text/javascript'></script>
+   <link href='css/mainpage.css' rel='stylesheet' type='text/css'>
+   <link href='css/menu.css' rel='stylesheet' type='text/css'>
+   <style>
+      body{
+         font-family:Verdana, Geneva, sans-serif;
+         font-size:14px;
+      }
+      .menuDiv {
+   	   height:300px;
+      	/* background-color: #99CCFF; */
+         background-color: #FFFFFF;
+	      padding:20px;
+      	margin-top:10px;
+	      border-bottom:5px solid #3399FF;
+      }
+      .show_hide {
+	      display:none;
+      }
+      #main {
+         background: #ffffff;
+         float: right;
+         width: 80%;
+      }
+
+      #main h2, #main h3, #main p {
+         padding: 0 10px;
+      }
+
+   </style>
+</head>
+<body>
+   <script type='text/javascript'>
+      $(document).ready(function()
+         {
+            $('#menuDiv').show();
+	         $('#imageShowHideMenu').show();
+            loadToMainContent('login.html');
+      	   $('#imageShowHideMenu;).click(function()
+               {
+   	            $('.menuDiv').slideToggle(600);
+                  if ($('#imageShowHideMenu').attr('src') == 'images/btn_hide_menu.gif')
+                  {
+                     $('#imageShowHideMenu').attr('src', $('#imageShowHideMenu').attr('src').replace('_hide_', '_show_') );
+                     $('#menuDiv').hide();
+                     $('#main').width('100%');
+                  }
+                  else
+                  {
+                     $('#menuDiv').show();
+                     $('#main').width('80%');
+                     $('#imageShowHideMenu').attr('src', $('#imageShowHideMenu').attr('src').replace('_show_', '_hide_') );
+	               }
+               }
+            );
+         }
+      );
+   </script>
+   <div id='header'>      
+		<table width='100%' cellspacing='0' cellpadding='0' border='0'>
+      	<tr>
+         	<td colspan='3'><table background='images/hbg.gif'  width='100%' cellspacing='0' cellpadding='0' border='0'>
+               	<tr>
+                  	<td width='20%'><img src='images/logo_smallest.jpg'></td>
+                     <td width='60%' align='CENTER' class='TEXT_HEADER_COMPANY'>" . $company . "</td>
+                     <td width='20%'>
+                     	<table>
+                        	<tr>
+                           	<td align='RIGHT' class='TEXT_CAPTION_USERNAME'>User Name : </td>
+                              <td class='TEXT_VALUE_USERNAME'> Administrator </td>
+                           </tr>
+                        	<tr>
+                           	<td align='RIGHT' class='TEXT_CAPTION_USERNAME'> Last Login  : </td>
+                              <td class='TEXT_VALUE_USERNAME'> 11 เมษายน 2556 10:11 น. </td>
+                           </tr>                          
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>          
+      <table  width='100%' cellspacing='0' cellpadding='0' border='0'>          
+         <tr bgcolor='#FF0000'>
+            <td width='30%' align='LEFT'>&nbsp;&nbsp;&nbsp;<img id='imageShowHideMenu' src='images/btn_hide_menu.gif' width='20' height='17' class='show_hide'></td>
+            <td class='TEXT_SCREEN_NAME' align='CENTER'>BOOKING</td>
+            <td width='30%' align='RIGHT'><SPAN CLASS='TEXT_SCREEN_ID'>SCREEN ID  [" . $screenID . "]</SPAN>&nbsp;&nbsp;<img src='images/btn_logout.gif'></td>
+         </tr>
+         <tr>
+         </tr>
+      </table> 
+   </div>
+   <div id='main' width='80%' align='top'>
+      <div align='center' id='mainContent'>
+";
+
+   }
+
+   public function getFooter($tree_menu)
+   {
+      return "
+</div>  
+   </div>
+   <div id='menuDiv' width='20%'>
+      <TABLE border='0' cellspacing='0' cellpadding='0' width='20%'>
+         <TR>
+            <TD valign='top' width='100%' bgcolor='#FFFFFF'>
+
+               <script language='JavaScript' src='javascripts/tree/tree.js'></script>" . $tree_menu . "
+               <script language='JavaScript' src='javascripts/tree/tree_tpl.js'></script>
+               <div class='TEXT_MENU'>
+               <script language='JavaScript'>
+                  new tree (TREE_ITEMS, tree_tpl,true);
+               </script>
+               </div>
+            </TD>
+         </TR>
+      </TABLE>
+   </div>
+   </body>
+</html>";
+   }
+
+}
+
+
+?>

@@ -1,0 +1,48 @@
+/* CSS Document */
+
+.t0i 
+{
+   font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #000000;
+   background-color: #ffffff;
+   text-decoration: none;
+}
+.t0im 
+{
+   border: 0px;
+   width: 19px;
+   height: 16px;
+}
+
+.field_label {
+   font-size: 9px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-style: normal;
+   line-height: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   color: #000000;
+}
+.table_title {
+   font-size: 12px;
+   color: #FFFFFF;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-style: normal;
+   line-height: normal;
+   font-weight: bold;
+   font-variant: normal;
+   text-transform: none;
+}
+.field_label_thai {
+
+   font-size: 12px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-style: normal;
+   line-height: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   color: #000000;
+}

@@ -1,0 +1,624 @@
+html,body html  { 
+	width:100%;
+	min-height:100%;
+} 
+body{
+	width:100%;
+	height:100%;
+	/*font:bold 10px "MS Sans Serif";*/ 
+	font:10px "MS Sans Serif";
+	margin:0px;
+	padding:0px;
+	/*position: relative;*/ /*delete by chutipong k. for grid calendar*/
+}
+.header{
+	background:url(../images/bg_head.gif);
+	height: 52px;
+	width: 100%;
+}
+.unheader{
+	background:#FF0000;
+	height:23px;
+	width:100%;	
+	padding-top: 1px;
+}
+.login{
+	color:#CC0000;
+}
+.textheader{
+	width:200px;
+	float:right;
+	background:url(../images/bg_headname22.gif);
+	font: normal 18px "Century Gothic";
+	color:#FFFFFF;
+}
+.content{
+	width:100%;
+	height:300px;
+	text-align:center;
+}
+.headContent{
+	align:left;
+	background-color:#6E878B;
+	height:10px;
+	color:#FFFFFF;
+	padding:5px;
+}
+.button{
+	height:25px;
+	width:100px;
+	background:url(../images/btn_bg.gif);
+	font: bold 12px "MS Sans Serif";
+	color:#ffe700;
+	border:1px #FFFFFF;
+	cursor: pointer;
+}
+.footer{
+	width:100%;
+	height:18px;
+	background:url(../images/bg_footer.gif);
+	text-align:center;
+	font: bold 12px;
+	color:#333333;
+	padding-top:12px;
+	bottom:0px;
+	left:0px;
+	position:fixed;
+}
+/*.search-border{
+	padding-top:20px;
+	text-align:center;
+}*/
+
+.moduleHeader{
+    background:#595959;
+	height:23px;
+	text-align:left;
+	font-size:16px;
+	padding-top:2px; 
+	padding-left:10px;
+	color:#FFFFFF;
+}
+
+.moduleName
+{
+  color:#FFFFFF;
+  font-size:18px;
+  font-family:"Century Gothic";
+  text-decoration: none;
+}
+.screenName
+{
+  color:#FFFFFF;
+  font-size:18px;
+  font-family:"Century Gothic";
+  text-decoration:underline;
+}
+.functionName
+{
+  color:#990000;
+  font-size:18px;
+  font-family:"Century Gothic";
+  text-decoration:underline;
+}
+.whitelink, .whitelink:link, .whitelink:visited, .whitelink:active
+{
+  color:#FFFFFF;
+  font-weight: bold;
+  font-size:11px;
+  font-family:"MS Sans Serif";
+  text-decoration: none;
+}
+.whitelink2, .whitelink2:link, .whitelink2:visited, .whitelink2:active
+{
+  color:#FFFFFF;
+  font-size:14px;
+  font-family:Century Gothic;
+  text-decoration: none;
+}
+.progress_box{
+  width:150px; 
+  text-align:center;
+}
+.std_box{
+	text-align:center;
+	width:100px;
+	vertical-align:middle;
+}	
+.spanLink{
+	color : blue;
+	font-size: 11px;
+	cursor: hand;
+	text-decoration: underline;
+}
+.smallFont{
+	font: bold 12px "MS Sans Serif";
+	color:#000000;
+	font-weight: bolder;
+}
+.redFont{
+	
+	/*font: bold 15px "MS Sans Serif";*/
+	color:#FF0000;
+	font-weight: bolder;
+}
+.dhx_header_cmenu{
+	background-color:#ffffff;
+	border:2px outset silver;
+	z-index:2;
+}
+.dhx_header_cmenu_item{
+	white-space:nowrap;
+}
+#main {
+    background: #ffffff;
+    float: right;
+    width: 80%;
+	height:82%;
+}
+#newMainContent {
+	text-align:center;
+}
+#sidebar {
+    background: #ffffff;
+    float: right;
+	width:20%;
+}
+
+/**CSS of Pricing System**/
+
+form{
+	margin: 0;
+}
+#wrap {
+    background: #ffffff;
+    margin: 0 auto;
+}
+/**
+.webTitle {    
+    text-align: center;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bolder;	
+}**/
+
+
+#nav {
+    background: #;
+    padding: 0px;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+	/*border:solid 1px #005091;*/
+	border:solid 1px #FFCCCC;
+	padding: 6px 10px 6px 10px;
+	margin: 10px;
+}
+
+legend span {
+	font-family: Tahoma,Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #cb1239;
+	/*color: #336699;*/
+	font-weight: bold; 
+	vertical-align:top; 
+	text-align:left;
+}
+
+#sidebar ul {
+    margin-bottom: 0;
+}
+
+
+#footer p {
+    padding: 5px;
+    margin: 0;
+	
+}
+
+ul {
+    list-style: none;
+    padding: 5px;
+    font-size: 0.9em;
+}
+/*
+Border
+*/
+.formInput{
+	border:1px solid #DDDDDD;
+	margin:10px 0;
+	padding:10px;
+	position:static;
+}
+.search-border{
+	border:1px solid #CCCCCC;
+	margin:1px 0;
+	padding:1px;
+/*	position:relative; */
+}
+.search-titlebar {
+	padding: 5px 5px;
+	cursor: pointer;
+	position: relative;
+	background-color:#FFCCCC/*#a00000*/;
+	margin:1px;
+	font-weight: bolder;
+}
+.search-titlebar2 {
+	padding: 5px 5px;
+	cursor: pointer;
+	position: relative;
+	background-color:#BFBFFF;
+	margin:1px;
+	font-weight: bolder;
+}
+.search-content {
+	padding: 5px 10px 15px;
+	background-color:#F4F4F8;
+}
+.maintenance-titlebar {
+	padding: 5px 5px;
+	cursor: pointer;
+	background-color:#f97070;
+	margin:0px;
+	color:#ffffff;
+	font-weight: bolder;
+	width: auto;
+	position: relative; /*add by chutipong k. for grid calendar*/
+}
+.maintenance-content {
+	padding: 5px 10px 15px;
+	background-color:#fef8f2;
+	position: relative; /*add by chutipong k. for grid calendar*/
+}
+
+/**Add by Natesai p. 20090827**/
+.result-titlebar {
+	padding: 5px 5px;
+	cursor: pointer;
+	position: relative;
+	background-color:#fc9f9f;
+	margin:1px;
+	font-weight: bolder;
+	color:#ffffff;
+}
+.result-content {
+	padding: 5px 10px 15px;
+	background-color:#fffbf8;
+}
+/**Add by Chatchawan S. 20091008**/
+.upload-titlebar {
+	padding: 5px 5px;
+	cursor: pointer;
+	position: relative;
+	background-color:#fc9f9f;
+	margin:1px;
+	font-weight: bolder;
+	color:#ffffff;
+}
+.upload-content {
+	padding: 5px 10px 15px;
+	background-color:#fffbf8;
+	/*position: relative;*/
+}
+
+/*f8e7e9,fffbf8*/
+/**End Add**/
+
+.text1 {
+    background-color: #FCFCFC;
+    border: 1px solid #CFCFCF;
+    color: #666666;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+		width: 200px;
+		height: 18px;
+}
+
+select {
+    font-family: Tahoma;
+    font-size: 12px;
+    border: #000000;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.button2 {
+	width: 80px;
+	height: 20px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.button3 {
+	height: 20px;
+	width: 150px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.button4 {
+	height: 20px;
+	width: 165px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+
+.button5 {
+	height: 20px;
+	width: 200px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+
+.button6 {
+	height: 20px;
+	width: 240px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+
+.button8 {
+	height: 20px;
+	width: 320px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+
+.spanLink {
+	color : blue;
+	font-size: 11px;
+	cursor: hand;
+	text-decoration: underline;
+}
+.spanLinkDisable {
+	color : blue;
+	font-size: 11px;
+	text-decoration: underline;
+}
+.inputStyle{
+	border:1px solid #6D90B0; 
+	color:#333333;
+	background-color:#EDF5FB;
+	font-family:Verdana; 
+	font-size:8pt;
+}
+
+.pagingPageLabel {
+	color : black;
+	font-size: 11px;	
+}
+
+.pagingTotalLabel {
+	color: blue;
+	font-size: 11px;
+}
+.pagingTariffError {
+	color: red;
+	font-size: 11px;
+}
+.inputText{
+	width: 100px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.redBtn{
+	height:25px;
+	width:100px;
+	font: bold 12px "MS Sans Serif";
+	background-color:#e60505;
+	color:#000000;
+	border:1px #FFFFFF;
+}
+
+TEXTAREA{
+    font-family:MS Sans Serif;
+    font-size:12px;
+}
+
+INPUT {
+	font-family:MS Sans Serif;
+    font-size:12px;
+}
+
+.textBox1{
+	font-family:MS Sans Serif;
+    font-size:12px;
+	width: 120px;
+}
+
+.redText{
+	color:#FF0000;
+}
+.blackText{
+	color:#000000;
+}
+
+.whiteText12{
+	padding:4px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bolder;	
+}
+.whiteText18{
+	padding:4px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bolder;		
+	text-align: center;
+}
+.text15 {
+	width: 40px;
+	height: 15px;
+}
+.smallFont{
+	font-family: Tahoma;
+    font-size: 8px;
+	color: #ffffff;
+	font-weight: bolder;
+}
+
+div.gridbox_modern table.obj td {
+	border-bottom: 1px solid #D6D6D6;
+	border-left: 1px solid white;
+	border-right: 1px solid #D6D6D6;
+}
+
+.numericTextBox{
+	text-align:right;
+}
+
+.dialogBtn {
+	width: 70px;
+	height: 23px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.buttonWide{
+	width: 140px;
+	height: 20px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.buttonMiddle{
+	width: 100px;
+	height: 20px;
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.buttonLong{
+	width: 190px;
+	height: 20px; 
+	font-family: Tahoma;
+    font-size: 12px;
+}
+.requireField{
+	color: red  
+}
+.textEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+		width: 200px;
+		height: 18px;
+}
+.buttonYellow{
+	background-color: #ffff66;
+}
+.buttonBlue{
+	background-color: #d5f1ff;
+}
+.button7 {
+	width: 50px;
+	height: 20px;
+	font-family: Tahoma;
+    font-size: 11px;
+}
+
+.textUpper{
+	text-transform: uppercase;
+}
+
+/*
+.input{
+	border: 1px solid #FFFF9D;
+}
+*/
+.inputFocus {
+	
+	border-color: #000;
+	background-color: #FFFE9D;
+	
+}
+/**End CSS of Pricing System**/
+
+.selectVeryShort{
+	width: 50px;
+}
+
+.selectShot{
+	width: 100px;
+}
+
+.selectMiddle_Shot{
+	width: 110px;
+}
+
+.selectMiddle{
+	width: 150px;
+}
+
+.selectLong{
+	width: 200px;
+}
+
+.selectWide{
+	width: 250px;
+}
+
+.disText{
+    background-color: #EEF2F7;
+}
+
+.enaText{
+    background-color: #FCFCFC;
+}
+
+.textareaEdit {
+    border: 1px solid #CFCFCF;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.textareaFocus {
+	border-color: #000;
+	background-color: #FFFE9D;
+
+}
+
+div.fileinputs {
+	position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	/*padding-left:0px;*/
+	/*padding-top:-10px;*/
+	z-index: 1;
+}
+
+input.fileUpload {
+	position: relative;
+	/*text-align: right;*/
+	-moz-opacity:0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+}	

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		
+		<title>APC SYSTEM</title>
+
+			<link rel="stylesheet" href="main.css" type="text/css" media="screen">
+
+			<!--  //////////////////////////// Start js & css of Menu \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\   -->
+
+			<link rel="stylesheet" href="menu.css" type="text/css" media="screen">
+			<script type="text/javascript" src="jquery_007.js"></script>
+			<script type="text/javascript" src="menuControl.js"></script>
+			<script type="text/javascript" src="ddaccordion.js"></script>
+			<script type="text/javascript" src="ddaccordioninit.js"></script>
+
+			<!--  //////////////////////////// End js & css of Menu \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\   -->
+
+			<style type="text/css">
+			.submenu {
+				display: none
+			}
+			</style>
+					
+			<style type="text/css">
+			.logoutclass {
+				padding-top: 1px;
+				width: 57px;
+				border: 0px;
+			}
+			</style>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	</head>
+	<body oncontextmenu="return false;">
+		
+		<iframe id="divframe"
+			style="width: 0pt; height: 0pt; visibility: hidden;" frameborder="0"
+			scrolling="no">
+		</iframe>
+
+		<div id="nav" class="unheader">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr>
+					<td style="padding-left: 5px;" align="left" width="85"><a
+						href="#" id="slick-toggle" class="whitelink">&lt;&lt; Hide Menu</a></td>
+					<td align="left" width="62"><a href="#"
+						onclick="showMenuControl();loadToMainContent('utils/screen/mainmenu_content.jsp;',
+		 '0','','')">
+					<img src="main_data/btn_home.gif" style="padding-top: 1px;"
+						border="0" width="57"> </a></td>
+					<td class="moduleName" align="center" width="782">
+					<div id="headName" style="display: none;"><span id="moduleName"></span>
+					<span class="screenName"></span> <span id="functionName"
+						class="functionName"></span></div>
+					</td>
+					<td style="padding-right: 20px;" align="right" width="62"><a
+						href="#"> <img id="logoutImg" src="main_data/btn_logout.gif"
+						class="logoutclass" onclick="g_Logout();"> </a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr>
+					<td
+						style="background-image: url(&quot;utils/images/under.gif&quot;);"
+						height="3px"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="unheaderline"></div>
+
+		<div id="main">
+		 <div id="mainContent">&nbsp;</div>
+		</div>
+
+		<!--//////////////////////left menu////////////////////////////////////////// -->
+		<div id="sidebar">
+			<div class="glossymenu">
+
+				<a headerindex="0h" href="#" class="menuitem submenuheader ">
+				  <span class="accordprefix">
+					</span>NAPS ADMIN J2<span class="accordsuffix"><img src="plus.gif" class="statusicon">
+				  </span>
+				</a>
+					<div style="display: none;" contentindex="0c" class="submenu">
+						<ul>
+							<li>
+								<a headerindex="1h" href="#" class="menuitem submenuheader ">
+									<span class="accordprefix"></span>Level1_1<span class="accordsuffix"> <img src="main_data/plus.gif" class="statusicon"></span>
+								</a>
+									<div style="display: block;" contentindex="5c" class="submenu">
+										<ul>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 0
+												</a>
+											</li>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 1
+												</a>
+											</li>
+										</ul>
+									</div>
+							</li>
+							<li>
+								<a headerindex="2h" href="#" class="menuitem submenuheader ">
+									<span class="accordprefix"></span>Level1_2<span class="accordsuffix"> <img src="main_data/plus.gif" class="statusicon"></span>
+								</a>
+									<div style="display: block;" contentindex="5c" class="submenu">
+										<ul>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 0
+												</a>
+											</li>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 1
+												</a>
+											</li>
+										</ul>
+									</div>
+							</li>
+						</ul>
+					</div>
+
+
+				<a headerindex="0h" href="#" class="menuitem submenuheader ">
+				  <span class="accordprefix">
+					</span>Administrator<span class="accordsuffix"><img src="plus.gif" class="statusicon">
+				  </span>
+				</a>
+					<div style="display: none;" contentindex="0c" class="submenu">
+						<ul>
+							<li>
+								<a class="menuitem2" style="padding-left: 20px;" href="#" 
+									onclick="loadToMainContent('common/screen/userpermission.jsp', 
+									'0','0','User Permission Master','0');setModuleName('User Permission Master');">User Permission Master
+								</a>
+							</li>
+							<li>
+								<a headerindex="1h" href="#" class="menuitem submenuheader ">
+									<span class="accordprefix"></span>Level1_1<span class="accordsuffix"> <img src="main_data/plus.gif" class="statusicon"></span>
+								</a>
+									<div style="display: block;" contentindex="5c" class="submenu">
+										<ul>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 0
+												</a>
+											</li>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 1
+												</a>
+											</li>
+										</ul>
+									</div>
+							</li>
+							<li>
+								<a headerindex="2h" href="#" class="menuitem submenuheader ">
+									<span class="accordprefix"></span>Level1_2<span class="accordsuffix"> <img src="main_data/plus.gif" class="statusicon"></span>
+								</a>
+									<div style="display: block;" contentindex="5c" class="submenu">
+										<ul>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 0
+												</a>
+											</li>
+											<li>
+												<a class="menuitem2" style="padding-left: 50px;"
+													href="#" onclick="loadToMainContent('Order/OrderStatusInquiry', '0','1','Order  Status Inquiry','0');setModuleName('Order Status Inquiry');">Order Status Inquiry 1
+												</a>
+											</li>
+										</ul>
+									</div>
+							</li>
+						</ul>
+					</div>
+					
+		</div>
+
+		<!--//////////////////////left menu//////////////////////////////////////////  -->
+
+		<div class="footer">Copyright ©2008 Asian Honda Motor Co.,Ltd.</div>
+
+	</body>
+</html>

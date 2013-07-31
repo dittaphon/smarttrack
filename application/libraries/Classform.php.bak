@@ -103,7 +103,7 @@ class Classform {
       <table  width='100%' cellspacing='0' cellpadding='0' border='0'>          
          <tr bgcolor='#FF0000'>
          <!--   <td width='30%' align='LEFT'>&nbsp;&nbsp;&nbsp;<img id='imageShowHideMenu' src='images/btn_hide_menu.gif' width='20' height='17' class='show_hide'></td> -->
-			<td width='30%' align='LEFT'>&nbsp;&nbsp;&nbsp;<div class='show_hide';><img id='imageShowHideMenu' src='images/btn_hide_menu.gif' width='20' height='17'></div></td>
+			<td width='30%' align='LEFT'>&nbsp;&nbsp;&nbsp;<img id='imageShowHideMenu' src='images/btn_hide_menu.gif' width='20' height='17'></td>
             <td class='TEXT_SCREEN_NAME' align='CENTER'>BOOKING</td>
             <td width='30%' align='RIGHT'><SPAN CLASS='TEXT_SCREEN_ID'>SCREEN ID  [" . $screenID . "]</SPAN>&nbsp;&nbsp;<img src='images/btn_logout.gif '>&nbsp;&nbsp;</td>
          </tr>

@@ -1,5 +1,12 @@
 <?php
    echo $header;
-   echo "Hello from View<BR>\n";
+
+	echo getcwd();
+?> 
+
+<h2> รายงาน Dashboard </h2>
+
+
+<?php
    echo $footer;
 ?>
